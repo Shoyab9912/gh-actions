@@ -1,5 +1,5 @@
 name: first_workflow
-on:push
+on: push
 jobs:
    runs_on_command:
    run-on:ubuntu-latest
