@@ -1,10 +1,10 @@
 name: first_workflow
+
 on: push
+
 jobs:
-   runs_on_command:
+  runs_on_command:
     runs-on: ubuntu-latest
-   steps:
-    - name : list all files
-     run: ls -a
-    
-   
+    steps:
+      - name: list all files
+        run: ls -a
