@@ -1,22 +1,13 @@
 name: first_workflow
 
 on: push
-
+env:
+    GLOBAL:"varaible"
 jobs:
   runs_on_command:
     runs-on: ubuntu-latest
     steps:
-      - name: list all files
-        run: ls -a
-
-  second_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: make
-        run: |
-          mkdir big
-          echo "hello world"
-          touch app.js
-          echo "console.log('hello')" > app.js
-          cat app.js
-          ls -a
+      - run: echo ${{env}}
+      - run: echo ${{github}}
+      - run: echo $GLOBAL
+   
