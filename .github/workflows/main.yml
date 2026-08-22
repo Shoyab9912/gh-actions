@@ -1,13 +1,14 @@
 name: first_workflow
 
 on: push
+
 env:
-    GLOBAL:varaible
+  GLOBAL: variable
+
 jobs:
   runs_on_command:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{env}}
-      - run: echo ${{github}}
+      - run: echo '${{ toJSON(env) }}'
+      - run: echo '${{ toJSON(github) }}'
       - run: echo $GLOBAL
-   
