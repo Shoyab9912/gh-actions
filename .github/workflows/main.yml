@@ -2,7 +2,7 @@ name: first_workflow
 
 on: push
 env:
-    GLOBAL:"varaible"
+    GLOBAL:varaible
 jobs:
   runs_on_command:
     runs-on: ubuntu-latest
